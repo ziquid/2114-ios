@@ -35,9 +35,9 @@
 #endif
     
 #ifdef DEBUG
-    NSString *urlCore = @"http://cg.dev.game.ziquid.com/celestial_glory/bounce/";
+    NSString *urlCore = @"http://stl2114.dev.game.ziquid.com/stlouis/bounce/";
 #else
-    NSString *urlCore = @"http://cg.game.ziquid.com/celestial_glory/bounce/";
+    NSString *urlCore = @"http://stl2114.game.ziquid.com/stlouis/bounce/";
 #endif
     
 	NSString *urlAddress = [urlCore stringByAppendingString:self.uniqueIdentifier];
@@ -59,7 +59,7 @@
         [defaults setValue:authKey forKey:@"authKey"];
     }
     
-    NSString* secretAgent = [NSString stringWithFormat:@"%@ (com.ziquid.celestialglory; %@; authKey=%@)",
+    NSString* secretAgent = [NSString stringWithFormat:@"%@ (com.ziquid.stl2114; %@; authKey=%@)",
                              normalAgent, versionStr, authKey];
     
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:secretAgent, @"UserAgent", nil];
@@ -149,9 +149,9 @@
 			uniqueIdentifier = [[device identifierForVendor] UUIDString];
 
 #ifdef DEBUG
-			NSString *urlCore = @"http://cg.dev.game.ziquid.com/celestial_glory/home/";
+			NSString *urlCore = @"http://stl2114.dev.game.ziquid.com/stlouis/home/";
 #else
-			NSString *urlCore = @"http://cg.game.ziquid.com/celestial_glory/home/";
+			NSString *urlCore = @"http://stl2114.game.ziquid.com/stlouis/home/";
 #endif
 			NSString *urlAddress = [urlCore stringByAppendingString:uniqueIdentifier];
 			

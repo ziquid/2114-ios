@@ -37,9 +37,9 @@
 @synthesize storeObserver = _storeObserver;
 
 #ifdef DEBUG
-static NSString *ownServer = @"http://cg.dev.game.ziquid.com/celestial_glory/elders_do_purchase";
+static NSString *ownServer = @"http://stl2114.dev.game.ziquid.com/stlouis/elders_do_purchase";
 #else
-static NSString *ownServer = @"http://cg.game.ziquid.com/celestial_glory/elders_do_purchase";
+static NSString *ownServer = @"http://stl2114.game.ziquid.com/stlouis/elders_do_purchase";
 #endif
 
 static id<MKStoreKitDelegate> _delegate;
